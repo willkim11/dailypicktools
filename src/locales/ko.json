@@ -1,0 +1,93 @@
+{
+  "common": {
+    "siteName": "Daily Pick Tools",
+    "searchPlaceholder": "도구 검색...",
+    "themeToggle": "테마 변경",
+    "footerRights": "Daily Pick Tools. All rights reserved.",
+    "backToHome": "홈으로 돌아가기",
+    "categories": {
+        "text": "텍스트 & 데이터",
+        "image": "이미지 & 디자인",
+        "math": "수학 & 변환"
+    },
+    "tools": {
+        "qr": {
+            "title": "QR 코드 생성기",
+            "content": "내용",
+            "size": "크기 (px)",
+            "colors": "색상",
+            "placeholder": "텍스트 또는 URL 입력...",
+            "saveHelper": "이미지를 우클릭하여 저장하세요"
+        },
+        "textDiff": {
+            "title": "텍스트 비교",
+            "original": "원본 텍스트",
+            "changed": "변경 텍스트",
+            "difference": "비교 결과",
+            "helper": "비교할 텍스트를 붙여넣으세요...",
+            "resultHelper": "결과가 여기에 표시됩니다...",
+            "chars": "글자(Chars)",
+            "words": "단어(Words)",
+            "lines": "줄(Lines)"
+        },
+        "calculator": {
+            "title": "공학용 계산기",
+            "error": "오류"
+        }
+    }
+  },
+  "menu": {
+    "dashboard": "대시보드",
+    "terms": "이용약관",
+    "privacy": "개인정보처리방침"
+  },
+  "dashboard": {
+    "title": "Daily Pick <1>Tools</1>",
+    "subtitle": "빠르고 안전한 무료 클라이언트 사이드 개발자 유틸리티 모음입니다. 서버 전송 없이 안전합니다."
+  },
+  "tools": {
+    "textDiff": { "name": "텍스트 비교", "desc": "두 텍스트의 차이점을 비교하고 강조합니다." },
+    "charCounter": { "name": "글자수 세기", "desc": "글자 수, 단어 수, 줄 수, 바이트를 계산합니다." },
+    "urlEncoder": { "name": "URL 인코더", "desc": "URL 문자열을 인코딩 및 디코딩합니다." },
+    "base64": { "name": "Base64 변환기", "desc": "텍스트와 이미지를 Base64로 변환합니다." },
+    "jsonFormatter": { "name": "JSON 포맷터", "desc": "JSON 데이터를 정렬, 축소 및 검증합니다." },
+    "xmlValidator": { "name": "XML 검증기", "desc": "XML 문서를 검증하고 포맷팅합니다." },
+    "markdown": { "name": "마크다운 미리보기", "desc": "마크다운을 실시간으로 편집하고 미리봅니다." },
+    "regex": { "name": "정규식 테스터", "desc": "정규 표현식을 테스트하고 검증합니다." },
+    "qr": { "name": "QR 코드 생성기", "desc": "커스텀 색상으로 QR 코드를 생성합니다." },
+    "imageConverter": { "name": "이미지 변환기", "desc": "이미지를 Base64 형식으로 변환합니다." },
+    "rgbPicker": { "name": "RGB 피커", "desc": "색상을 선택하고 포맷(HEX, RGB)을 변환합니다." },
+    "palette": { "name": "팔레트 생성기", "desc": "기본 색상으로 다양한 색상 팔레트를 생성합니다." },
+    "calculator": { "name": "계산기", "desc": "기록 기능이 있는 공학용 계산기입니다." },
+    "unitConverter": { "name": "단위 변환기", "desc": "길이, 무게, 넓이, 온도를 변환합니다." }
+  },
+  "legal": {
+    "termsTitle": "이용약관",
+    "privacyTitle": "개인정보처리방침",
+    "contactUs": "문의하기",
+    "lastUpdated": "최종 수정일",
+    "sections": {
+        "agreement": "약관 동의",
+        "agreementText": "본 웹사이트에 접속함으로써 귀하는 이 이용약관에 동의하는 것으로 간주됩니다.",
+        "license": "사용 라이선스",
+        "licenseText": "개인적, 비상업적 일시적 열람을 위해 자료의 사본 1부를 임시 다운로드하는 것이 허용됩니다.",
+        "disclaimer": "면책 조항",
+        "disclaimerText": "본 웹사이트의 자료는 '있는 그대로' 제공되며 어떠한 보증도 하지 않습니다.",
+        "clientSide": "클라이언트 사이드 처리",
+        "clientSideText": "저희 도구는 귀하의 기기에서 로컬로 데이터를 처리합니다. 입력 데이터는 서버로 전송되지 않습니다.",
+        "contactText": "문의사항이 있으시면 아래로 연락해 주세요:",
+        "infoCollection": "정보 수집",
+        "infoCollectionText": "저희는 서비스를 제공하기 위해 꼭 필요할 때만 개인정보를 요구합니다.",
+        "logData": "로그 데이터",
+        "logDataText": "저희는 귀하가 웹사이트를 방문할 때 브라우저가 전송하는 데이터(로그 데이터)를 수집합니다.",
+        "cookies": "쿠키",
+        "cookiesText": "저희는 귀하의 활동 정보를 수집하기 위해 '쿠키'를 사용합니다.",
+        "security": "보안",
+        "securityText": "저희는 귀하의 개인정보 보호를 위해 상업적으로 허용되는 수단을 사용하려고 노력합니다.",
+        "links": "타 사이트 링크",
+        "linksText": "저희 서비스는 타 사이트 링크를 포함할 수 있습니다. 해당 외부 사이트는 저희가 운영하지 않습니다.",
+        "changes": "개인정보처리방침 변경",
+        "changesText": "저희는 개인정보처리방침을 수시로 업데이트할 수 있습니다. 따라서 이 페이지를 주기적으로 확인하시기 바랍니다."
+    }
+  }
+}

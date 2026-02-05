@@ -1,0 +1,93 @@
+{
+  "common": {
+    "siteName": "Daily Pick Tools",
+    "searchPlaceholder": "Search tools...",
+    "themeToggle": "Toggle Theme",
+    "footerRights": "Daily Pick Tools. All rights reserved.",
+    "backToHome": "Back to Home",
+    "categories": {
+        "text": "Text & Data",
+        "image": "Image & Design",
+        "math": "Math & Converts"
+    },
+    "tools": {
+        "qr": {
+            "title": "QR Code Generator",
+            "content": "Content",
+            "size": "Size (px)",
+            "colors": "Colors",
+            "placeholder": "Enter text or URL...",
+            "saveHelper": "Right-click to save image"
+        },
+        "textDiff": {
+            "title": "Text Compare",
+            "original": "Original Text",
+            "changed": "Changed Text",
+            "difference": "Difference",
+            "helper": "Paste text to compare...",
+            "resultHelper": "Result will appear here...",
+            "chars": "Chars",
+            "words": "Words",
+            "lines": "Lines"
+        },
+        "calculator": {
+            "title": "Scientific Calculator",
+            "error": "Error"
+        }
+    }
+  },
+  "menu": {
+    "dashboard": "Dashboard",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy"
+  },
+  "dashboard": {
+    "title": "Daily Pick <1>Tools</1>",
+    "subtitle": "A collection of free, client-side developer utilities. No server-side processing, secure and fast."
+  },
+  "tools": {
+    "textDiff": { "name": "Text Diff", "desc": "Compare two texts and highlight differences." },
+    "charCounter": { "name": "Word Counter", "desc": "Count characters, words, lines, and bytes." },
+    "urlEncoder": { "name": "URL Encoder", "desc": "Encode and decode URL strings." },
+    "base64": { "name": "Base64 Converter", "desc": "Convert text and images to Base64." },
+    "jsonFormatter": { "name": "JSON Formatter", "desc": "Prettify, minify, and validate JSON data." },
+    "xmlValidator": { "name": "XML Validator", "desc": "Validate and format XML documents." },
+    "markdown": { "name": "Markdown Preview", "desc": "Real-time Markdown editor and previewer." },
+    "regex": { "name": "Regex Tester", "desc": "Test regular expressions against text." },
+    "qr": { "name": "QR Generator", "desc": "Generate QR codes with custom colors." },
+    "imageConverter": { "name": "Image Converter", "desc": "Convert images to Base64 format." },
+    "rgbPicker": { "name": "RGB Picker", "desc": "Pick colors and convert formats (HEX, RGB)." },
+    "palette": { "name": "Palette Generator", "desc": "Generate color palettes from a base color." },
+    "calculator": { "name": "Calculator", "desc": "Scientific calculator with history." },
+    "unitConverter": { "name": "Unit Converter", "desc": "Convert length, weight, area, and temperature." }
+  },
+  "legal": {
+    "termsTitle": "Terms of Service",
+    "privacyTitle": "Privacy Policy",
+    "contactUs": "Contact Us",
+    "lastUpdated": "Last Updated",
+    "sections": {
+        "agreement": "Agreement to Terms",
+        "agreementText": "By accessing our website, you agree to be bound by these Terms of Service.",
+        "license": "Use License",
+        "licenseText": "Permission is granted to temporarily download one copy of the materials for personal, non-commercial transitory viewing only.",
+        "disclaimer": "Disclaimer",
+        "disclaimerText": "The materials on this website are provided on an 'as is' basis without any warranties.",
+        "clientSide": "Client-Side Processing",
+        "clientSideText": "Our tools process data locally on your device. We do not transmit your input data to any server.",
+        "contactText": "If you have any questions, please contact us at:",
+        "infoCollection": "Information Collection",
+        "infoCollectionText": "We only ask for personal information when we truly need it to provide a service to you.",
+        "logData": "Log Data",
+        "logDataText": "We collect data that your browser sends whenever you visit our website (Log Data).",
+        "cookies": "Cookies",
+        "cookiesText": "We use 'cookies' to collect information about you and your activity across our site.",
+        "security": "Security",
+        "securityText": "We value your trust in providing us your Personal Information, thus we are striving to use commercially acceptable means of protecting it.",
+        "links": "Links to Other Sites",
+        "linksText": "Our Service may contain links to other sites. Note that these external sites are not operated by us.",
+        "changes": "Changes to This Privacy Policy",
+        "changesText": "We may update our Privacy Policy from time to time. Thus, we advise you to review this page periodically for any changes."
+    }
+  }
+}
