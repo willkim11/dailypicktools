@@ -1,12 +1,18 @@
 import { Link } from 'react-router-dom';
 import { tools } from '../tools/toolsConfig';
 import { useTranslation, Trans } from 'react-i18next';
+import SEO from '../components/SEO';
 
 export default function Dashboard() {
   const { t } = useTranslation('translation');
 
   return (
     <div className="space-y-8">
+      <SEO 
+        title={t('dashboard.title').replace(/<[^>]*>/g, '')}
+        description={t('dashboard.subtitle')}
+        keywords={['devtools', 'developer tools', 'utility', 'converter', 'calculator']}
+      />
       <div className="text-center py-10">
         <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-5xl mb-4">
           <Trans i18nKey="dashboard.title" components={{ 1: <span className="text-blue-600" /> }} />
