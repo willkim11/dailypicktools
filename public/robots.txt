@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://dailypicktools.com/sitemap.xml
+Sitemap: https://dailypicktools.vercel.app/sitemap.xml
