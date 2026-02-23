@@ -1,7 +1,11 @@
 import { useState, useMemo } from 'react';
+import { useTranslation } from 'react-i18next';
+import SEO from '../../components/SEO';
+import ToolInfo from '../../components/ToolInfo';
 
 export default function CharCounterTool() {
   const [text, setText] = useState('');
+  const { t } = useTranslation();
 
   const stats = useMemo(() => {
     return {
@@ -15,7 +19,15 @@ export default function CharCounterTool() {
 
   return (
     <div className="space-y-6">
-      <h1 className="text-2xl font-bold text-gray-900 dark:text-white">Word & Character Counter</h1>
+      <SEO 
+        title={t('tools.char-counter.name')}
+        description={t('tools.char-counter.desc')}
+        keywords={['word counter', 'character counter', '글자수 세기', '단어수 계산']}
+        url="/tools/text/counter"
+      />
+      <h1 className="text-2xl font-bold text-gray-900 dark:text-white">
+        {t('tools.char-counter.name', { defaultValue: 'Word & Character Counter' })}
+      </h1>
 
       <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
         {[
@@ -53,6 +65,8 @@ export default function CharCounterTool() {
             Copy Text
         </button>
       </div>
+
+      <ToolInfo toolId="char-counter" />
     </div>
   );
 }

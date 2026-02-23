@@ -1,6 +1,10 @@
 import { useState, useMemo } from 'react';
+import { useTranslation } from 'react-i18next';
+import SEO from '../../components/SEO';
+import ToolInfo from '../../components/ToolInfo';
 
 export default function RegexTesterTool() {
+  const { t } = useTranslation();
   const [regexStr, setRegexStr] = useState('');
   const [flags, setFlags] = useState('gm');
   const [testString, setTestString] = useState('The quick brown fox jumps over the lazy dog.');
@@ -54,9 +58,17 @@ export default function RegexTesterTool() {
 
   return (
     <div className="space-y-6">
-       <h1 className="text-2xl font-bold text-gray-900 dark:text-white">Regex Tester</h1>
+      <SEO 
+        title={t('tools.regex.name')}
+        description={t('tools.regex.desc')}
+        keywords={['regex', 'regular expression', 'regex tester', '정규식 테스터', '정규식']}
+        url="/tools/text/regex"
+      />
+      <h1 className="text-2xl font-bold text-gray-900 dark:text-white">
+        {t('tools.regex.name', { defaultValue: 'Regex Tester' })}
+      </h1>
 
-       <div className="grid gap-4">
+      <div className="grid gap-4">
            {/* Regex Input */}
            <div className="flex gap-4">
                <div className="flex-1">
@@ -97,14 +109,16 @@ export default function RegexTesterTool() {
 
             {/* Results */}
             <div>
-                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                    Matches: {matches ? matches.length : <span className="text-red-500">Invalid Regex</span>}
-                </label>
-                <div className="w-full min-h-[100px] p-4 bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg font-mono text-sm whitespace-pre-wrap text-gray-800 dark:text-gray-300">
-                    {highlightedText}
-                </div>
-            </div>
-       </div>
+        <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+            Matches: {matches ? matches.length : <span className="text-red-500">Invalid Regex</span>}
+        </label>
+        <div className="w-full min-h-[100px] p-4 bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg font-mono text-sm whitespace-pre-wrap text-gray-800 dark:text-gray-300">
+            {highlightedText}
+        </div>
+      </div>
+      </div>
+      
+      <ToolInfo toolId="regex" />
     </div>
   );
 }

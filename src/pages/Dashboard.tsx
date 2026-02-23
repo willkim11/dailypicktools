@@ -43,6 +43,35 @@ export default function Dashboard() {
           </Link>
         ))}
       </div>
+
+      <article className="mt-16 bg-white dark:bg-gray-800 rounded-2xl p-8 md:p-12 border border-gray-200 dark:border-gray-700 shadow-sm space-y-10 text-gray-700 dark:text-gray-300">
+        <section>
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+            {t('dashboard.seo.whatIs.title')}
+          </h2>
+          <p className="leading-relaxed text-lg">
+            {t('dashboard.seo.whatIs.content')}
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+            {t('dashboard.seo.why.title')}
+          </h2>
+          <p className="leading-relaxed text-lg">
+            {t('dashboard.seo.why.content')}
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+            {t('dashboard.seo.features.title')}
+          </h2>
+          <div className="leading-relaxed text-lg whitespace-pre-line">
+            {t('dashboard.seo.features.content')}
+          </div>
+        </section>
+      </article>
     </div>
   );
 }

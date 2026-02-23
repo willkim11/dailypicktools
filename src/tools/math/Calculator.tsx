@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import * as math from 'mathjs';
 import { useTranslation } from 'react-i18next';
+import SEO from '../../components/SEO';
+import ToolInfo from '../../components/ToolInfo';
 
 export default function CalculatorTool() {
   const { t } = useTranslation('translation');
@@ -37,7 +39,13 @@ export default function CalculatorTool() {
 
   return (
     <div className="space-y-6 flex flex-col items-center">
-      <h1 className="text-2xl font-bold text-gray-900 dark:text-white">{t('tools.calculator.title')}</h1>
+      <SEO 
+        title={t('tools.calculator.name')}
+        description={t('tools.calculator.desc')}
+        keywords={['calculator', 'scientific calculator', 'math', '공학용 계산기', '계산기']}
+        url="/tools/math/calculator"
+      />
+      <h1 className="text-2xl font-bold text-gray-900 dark:text-white">{t('tools.calculator.title', { defaultValue: 'Scientific Calculator' })}</h1>
       
       <div className="w-full max-w-sm bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700">
         <div className="mb-4">
@@ -78,6 +86,10 @@ export default function CalculatorTool() {
                  </button>
              ))}
         </div>
+      </div>
+      
+      <div className="w-full max-w-4xl pt-8">
+        <ToolInfo toolId="calculator" />
       </div>
     </div>
   );

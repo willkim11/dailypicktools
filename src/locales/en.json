@@ -11,7 +11,7 @@
         "math": "Math & Converts"
     },
     "tools": {
-        "qr": {
+        "qr-generator": {
             "title": "QR Code Generator",
             "content": "Content",
             "size": "Size (px)",
@@ -19,7 +19,7 @@
             "placeholder": "Enter text or URL...",
             "saveHelper": "Right-click to save image"
         },
-        "textDiff": {
+        "text-diff": {
             "title": "Text Compare",
             "original": "Original Text",
             "changed": "Changed Text",
@@ -42,24 +42,101 @@
     "privacy": "Privacy Policy"
   },
   "dashboard": {
-    "title": "Daily Pick <1>Tools</1>",
-    "subtitle": "A collection of free, client-side developer utilities. No server-side processing, secure and fast."
+    "title": "Free Developer Utilities, <1>Daily Pick Tools</1>",
+    "subtitle": "A collection of practical, lightning-fast client-side utilities. No servers, no sign-ups. Your data stays strictly on your device.",
+    "seo": {
+      "whatIs": {
+        "title": "What is Daily Pick Tools?",
+        "content": "Daily Pick Tools is a growing collection of client-side web utilities tailored for developers, students, and everyday users. From text and data manipulation to image processing and math converters, we provide free online tools that work instantly within your browser, with absolutely zero server-side processing."
+      },
+      "why": {
+        "title": "Why should you use this website?",
+        "content": "Privacy and speed are our top priorities. Unlike many online utilities that send your sensitive data to remote servers, every tool on Daily Pick Tools (including Word Counter, JSON Formatter, and Base64 Converters) runs 100% locally on your machine via JavaScript. This means your data is never transmitted over the internet. It guarantees the ultimate secure, private, and instant experience without annoying ads or subscriptions."
+      },
+      "features": {
+        "title": "Key Feature Categories",
+        "content": "1. Text & Data Tools\nEnhance your productivity with tools like the Word & Character Counter, Text Diff (Compare), Regex Tester, JSON/XML Formatters, and URL Encoders.\n\n2. Image & Design Tools\nQuickly manage visual assets using our QR Code Generator, RGB to HEX Picker, Base64 Image Converter, and customizable Color Palette generators.\n\n3. Math & Conversion Tools\nPerform seamless calculations and unit conversions, from standard measurement conversions to a robust scientific calculator with history integration."
+      }
+    }
   },
   "tools": {
-    "textDiff": { "name": "Text Diff", "desc": "Compare two texts and highlight differences." },
-    "charCounter": { "name": "Word Counter", "desc": "Count characters, words, lines, and bytes." },
-    "urlEncoder": { "name": "URL Encoder", "desc": "Encode and decode URL strings." },
-    "base64": { "name": "Base64 Converter", "desc": "Convert text and images to Base64." },
-    "jsonFormatter": { "name": "JSON Formatter", "desc": "Prettify, minify, and validate JSON data." },
-    "xmlValidator": { "name": "XML Validator", "desc": "Validate and format XML documents." },
-    "markdown": { "name": "Markdown Preview", "desc": "Real-time Markdown editor and previewer." },
-    "regex": { "name": "Regex Tester", "desc": "Test regular expressions against text." },
-    "qr": { "name": "QR Generator", "desc": "Generate QR codes with custom colors." },
-    "imageConverter": { "name": "Image Converter", "desc": "Convert images to Base64 format." },
-    "rgbPicker": { "name": "RGB Picker", "desc": "Pick colors and convert formats (HEX, RGB)." },
-    "palette": { "name": "Palette Generator", "desc": "Generate color palettes from a base color." },
-    "calculator": { "name": "Calculator", "desc": "Scientific calculator with history." },
-    "unitConverter": { "name": "Unit Converter", "desc": "Convert length, weight, area, and temperature." }
+    "text-diff": { "name": "Text Diff", "desc": "Visually compare two texts and highlight the differences." },
+    "char-counter": { 
+      "name": "Word Counter", 
+      "desc": "Count characters, words, lines, and exclude spaces easily.",
+      "seo": {
+        "whatIs": {
+          "title": "What is the Word Counter Tool?",
+          "content": "The Word Counter (Word & Character Counter) is a free, instant online utility that calculates the exact number of characters, words, lines, and paragraphs in any given text. It is fully optimized for writers, students, social media managers, and developers who need to adhere to strict character or word count limits for essays, tweets, metadata tags, or blog posts."
+        },
+        "howTo": {
+          "title": "How do I use it?",
+          "content": "1. Simply type or copy-paste (Ctrl+V) your text into the main text area.\n2. The top dashboard panel will instantly update with real-time analytics including total characters, words, lines, spaces-excluded characters, and paragraphs.\n3. Use the 'Clear Text' button to start over immediately, or hit 'Copy Text' to move your finalized content to your clipboard."
+        },
+        "why": {
+          "title": "The Safest and Fastest Word Counter",
+          "content": "Because our Word Counter operates purely client-side (inside your browser), whatever you type or paste—whether it's a confidential thesis or a private company memo—never leaves your computer. No data is stored, and no server requests are made. Experience zero latency as the count updates instantly with every keystroke."
+        },
+        "useCases": {
+          "title": "Common Use Cases",
+          "content": "- Academic Writing: Ensure your essay or research paper meets the required word count limits.\n- Social Media: Check character limits for platforms like Twitter (X), Instagram, Facebook, and Threads.\n- SEO Copywriting: Keep title tags, meta descriptions, and blog post content within Google's optimal length.\n- Professional Resumes: Monitor character limits on job application portals and cover letters."
+        }
+      }
+    },
+    "url-encoder": { "name": "URL Encoder", "desc": "Safely encode and decode URL strings containing special characters." },
+    "base64": { "name": "Base64 Converter", "desc": "Quickly encode string data to Base64 format, or decode it back." },
+    "json-formatter": { "name": "JSON Formatter", "desc": "Prettify, minify, and validate complex JSON data for better readability." },
+    "xml-validator": { "name": "XML Validator", "desc": "Validate, prettify, and troubleshoot XML syntax errors instantly." },
+    "markdown": { "name": "Markdown Preview", "desc": "A real-time lightweight Markdown editor and HTML live previewer." },
+    "regex": { 
+      "name": "Regex Tester", 
+      "desc": "Test regular expressions directly against text inputs.",
+      "seo": {
+        "whatIs": {
+          "title": "What is the Online Regex Tester?",
+          "content": "This Regex (Regular Expressions) Tester is a fast, visually intuitive, browser-based developer utility designed to test and validate JavaScript regular expression patterns in real-time. Whether you are searching for complex substring matches, crafting form validation rules, or trying out new RegEx methods, it allows you to visualize exactly which characters trigger a match."
+        },
+        "howTo": {
+          "title": "How to Verify RegEx Patterns",
+          "content": "1. Enter your Regular Expression into the top input field without the leading and trailing forward slashes (e.g., [A-Za-z0-9]+).\n2. Customize your search behavior by adjusting the Flags input box (g for global search, m for multiline, i for case-insensitive).\n3. Paste your raw, unprocessed 'Test String' data into the large text area below.\n4. Scroll down to see the results panel dynamically highlight any detected matches, showing exactly which parts of your test string evaluate to true."
+        },
+        "why": {
+          "title": "No Server Dependencies & Ultimate Privacy",
+          "content": "Working with regular expressions often involves testing on sensitive datasets like customer emails, passwords, and API logs. Our Regex Tester processes all strings purely client-side within your internet browser via native Web APIs and JavaScript engines. No string or regex pattern is ever submitted or logged to an external backend database, ensuring your privacy completely."
+        },
+        "useCases": {
+          "title": "Popular Regex Use Cases",
+          "content": "- Front-End Developers: Safely implementing and debugging complex form validation logic (checking valid emails, strong passwords, or phone formats).\n- Back-End & Data Engineers: Writing robust data parsing logic before deploying regex filters to production backend environments.\n- Web Scrapers & OSINT: Cleaning up messy scraped text by replacing or extracting specific sequences without writing an entire Python script first."
+        }
+      }
+    },
+    "qr-generator": { "name": "QR Generator", "desc": "Create high-quality, custom-colored QR codes from any text or URL." },
+    "image-base64": { "name": "Image Converter", "desc": "Turn local image file uploads directly into Base64 encoded strings." },
+    "rgb-picker": { "name": "RGB Picker", "desc": "Pick custom colors and convert formats between HEX, RGB, and HSL." },
+    "palette": { "name": "Palette Generator", "desc": "Generate a matching, harmonious color scheme from one base color." },
+    "calculator": { 
+      "name": "Calculator", 
+      "desc": "A fully-featured scientific calculator with a history log.",
+      "seo": {
+        "whatIs": {
+          "title": "What is the Online Scientific Calculator?",
+          "content": "This scientific calculator is a free, lightweight, browser-based mathematical tool that works instantly without requiring app installations. From standard operations (addition, subtraction, multiplication, division) to complex calculations handling detailed order of operations with parentheses, it provides exact results. Its UI is clean, intuitive, and works flawlessly across desktops and mobile devices."
+        },
+        "howTo": {
+          "title": "Instructions for Use",
+          "content": "1. Click the provided numeric and operation buttons on your screen, or use your physical keyboard numpad to enter an expression.\n2. Observe the full expression on the top display to ensure all parentheses and operators are placed correctly before calculating.\n3. Hit the '=' button or press 'Enter'. Your answer will be generated instantly.\n4. To start a fresh expression, press the 'C' button to clear history and reset."
+        },
+        "why": {
+          "title": "Secure, Fast, and Locally Ran",
+          "content": "A major advantage of using Daily Pick Tools' calculator is its entirely client-side architecture. It does not send the mathematical expressions you type to a remote server. Everything computes directly within your browser’s JavaScript engine. This removes internet latency out of the equation entirely—providing blazing-fast answers while guaranteeing complete privacy."
+        },
+        "useCases": {
+          "title": "Common Applications",
+          "content": "- Students & Educators: Quickly verify complex multi-step homework answers involving parentheses.\n- Professionals: Accurate, easy-to-use tool for calculating taxes, estimating project budgets, and personal accounting.\n- Everyday Math: Reliable replacement for the basic smartphone calculator app without annoying intrusive advertisements."
+        }
+      }
+    },
+    "unit-converter": { "name": "Unit Converter", "desc": "Convert standard physical quantities like length, area, weight, and temperature." }
   },
   "legal": {
     "termsTitle": "Terms of Service",
