@@ -6,12 +6,12 @@ export default function MarkdownTool() {
   const [markdown, setMarkdown] = useState('# Hello Markdown\n\n- List item 1\n- List item 2\n\n| Column 1 | Column 2 |\n|---|---|\n| Cell 1 | Cell 2 |');
 
   return (
-    <div className="space-y-6 h-[calc(100vh-200px)]">
+    <div className="space-y-6">
       <div className="flex justify-between items-center">
            <h1 className="text-2xl font-bold text-gray-900 dark:text-white">Markdown Preview</h1>
       </div>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 h-full">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 min-h-[500px] lg:min-h-[700px] h-[calc(100vh-300px)]">
         <div className="flex flex-col h-full">
             <label className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Markdown Input</label>
             <textarea
