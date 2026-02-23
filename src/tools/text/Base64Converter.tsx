@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { ArrowDownUp } from 'lucide-react';
-
+import ToolGuide from '../../components/ToolGuide';
 export default function Base64ConverterTool() {
   const [input, setInput] = useState('');
   const [output, setOutput] = useState('');
@@ -92,6 +92,7 @@ export default function Base64ConverterTool() {
             </div>
         </div>
       </div>
+      <ToolGuide toolId="base64" />
     </div>
   );
 }

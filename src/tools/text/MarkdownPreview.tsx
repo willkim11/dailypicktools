@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
-
+import ToolGuide from '../../components/ToolGuide';
 export default function MarkdownTool() {
   const [markdown, setMarkdown] = useState('# Hello Markdown\n\n- List item 1\n- List item 2\n\n| Column 1 | Column 2 |\n|---|---|\n| Cell 1 | Cell 2 |');
 
@@ -31,6 +31,7 @@ export default function MarkdownTool() {
             </div>
         </div>
       </div>
+      <ToolGuide toolId="markdownPreview" />
     </div>
   );
 }

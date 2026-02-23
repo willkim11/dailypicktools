@@ -34,7 +34,7 @@ export default function Header({ onMenuClick }: HeaderProps) {
 
   return (
     <header className="h-16 flex items-center justify-between px-4 md:px-6 bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 shadow-sm z-10">
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-4 flex-1">
         <button 
           onClick={onMenuClick}
           className="lg:hidden p-2 -ml-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md"
@@ -53,6 +53,11 @@ export default function Header({ onMenuClick }: HeaderProps) {
              placeholder={t('searchPlaceholder')}
            />
         </div>
+
+        <nav className="hidden md:flex items-center gap-6 ml-4">
+          <a href="/about" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors">소개</a>
+          <a href="/blog" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors">블로그</a>
+        </nav>
       </div>
 
       <div className="flex items-center gap-2">

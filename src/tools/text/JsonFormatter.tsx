@@ -1,5 +1,5 @@
 import { useState } from 'react';
-
+import ToolGuide from '../../components/ToolGuide';
 export default function JsonFormatterTool() {
   const [input, setInput] = useState('');
   const [output, setOutput] = useState('');
@@ -84,6 +84,7 @@ export default function JsonFormatterTool() {
             </div>
         </div>
       </div>
+      <ToolGuide toolId="jsonFormatter" />
     </div>
   );
 }

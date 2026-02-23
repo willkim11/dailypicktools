@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import ToolGuide from '../../components/ToolGuide';
 import { colord, extend } from 'colord';
 import mixPlugin from 'colord/plugins/mix';
 import namesPlugin from 'colord/plugins/names';
@@ -76,6 +77,7 @@ export default function PaletteGeneratorTool() {
                 </div>
             ))}
         </div>
+        <ToolGuide toolId="paletteGenerator" />
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import { useState, useMemo } from 'react';
+import ToolGuide from '../../components/ToolGuide';
 import { colord, extend } from 'colord';
 import namesPlugin from 'colord/plugins/names';
 import cmykPlugin from 'colord/plugins/cmyk';
@@ -62,6 +63,7 @@ export default function RgbPickerTool() {
              ))}
          </div>
       </div>
+      <ToolGuide toolId="rgbPicker" />
     </div>
   );
 }

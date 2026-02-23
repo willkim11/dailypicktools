@@ -1,5 +1,5 @@
 import { useState } from 'react';
-
+import ToolGuide from '../../components/ToolGuide';
 export default function XmlValidatorTool() {
   const [input, setInput] = useState('');
   const [result, setResult] = useState<{valid: boolean, message: string} | null>(null);
@@ -63,6 +63,7 @@ export default function XmlValidatorTool() {
             </div>
         )}
       </div>
+      <ToolGuide toolId="xmlValidator" />
     </div>
   );
 }

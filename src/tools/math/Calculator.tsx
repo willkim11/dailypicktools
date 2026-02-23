@@ -2,7 +2,7 @@ import { useState } from 'react';
 import * as math from 'mathjs';
 import { useTranslation } from 'react-i18next';
 import SEO from '../../components/SEO';
-import ToolInfo from '../../components/ToolInfo';
+import ToolGuide from '../../components/ToolGuide';
 
 export default function CalculatorTool() {
   const { t } = useTranslation('translation');
@@ -89,7 +89,7 @@ export default function CalculatorTool() {
       </div>
       
       <div className="w-full max-w-4xl pt-8">
-        <ToolInfo toolId="calculator" />
+        <ToolGuide toolId="scientificCalculator" />
       </div>
     </div>
   );

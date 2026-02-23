@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { QRCodeSVG } from 'qrcode.react';
 import { useTranslation } from 'react-i18next';
-
+import ToolGuide from '../../components/ToolGuide';
 export default function QrCodeTool() {
   const { t } = useTranslation('translation');
   const [text, setText] = useState('https://example.com');
@@ -72,6 +72,7 @@ export default function QrCodeTool() {
              <p className="mt-4 text-sm text-gray-500">{t('tools.qr.saveHelper')}</p>
         </div>
       </div>
+      <ToolGuide toolId="qrGenerator" />
     </div>
   );
 }

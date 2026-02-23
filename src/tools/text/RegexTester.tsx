@@ -1,7 +1,7 @@
 import { useState, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import SEO from '../../components/SEO';
-import ToolInfo from '../../components/ToolInfo';
+import ToolGuide from '../../components/ToolGuide';
 
 export default function RegexTesterTool() {
   const { t } = useTranslation();
@@ -118,7 +118,7 @@ export default function RegexTesterTool() {
       </div>
       </div>
       
-      <ToolInfo toolId="regex" />
+      <ToolGuide toolId="regexTester" />
     </div>
   );
 }

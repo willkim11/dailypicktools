@@ -1,5 +1,5 @@
 import { useState } from 'react';
-
+import ToolGuide from '../../components/ToolGuide';
 export default function ImageConverterTool() {
   const [base64, setBase64] = useState('');
   const [preview, setPreview] = useState<string | null>(null);
@@ -59,6 +59,7 @@ export default function ImageConverterTool() {
              )}
         </div>
       </div>
+      <ToolGuide toolId="imageConverter" />
     </div>
   );
 }

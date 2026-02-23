@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { ArrowDownUp } from 'lucide-react';
-
+import ToolGuide from '../../components/ToolGuide';
 export default function UrlEncoderTool() {
   const [input, setInput] = useState('');
   const [output, setOutput] = useState('');
@@ -85,6 +85,7 @@ export default function UrlEncoderTool() {
             </div>
         </div>
       </div>
+      <ToolGuide toolId="urlEncoder" />
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-
+import ToolGuide from '../../components/ToolGuide';
 type Category = 'length' | 'weight' | 'temperature' | 'area';
 
 const categories: Category[] = ['length', 'weight', 'temperature', 'area'];
@@ -128,6 +128,7 @@ export default function UnitConverterTool() {
                </select>
            </div>
        </div>
+       <ToolGuide toolId="unitConverter" />
     </div>
   );
 }

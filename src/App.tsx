@@ -20,7 +20,11 @@ import CalculatorTool from './tools/math/Calculator';
 import UnitConverterTool from './tools/math/UnitConverter';
 
 import Terms from './pages/Terms';
-import Privacy from './pages/Privacy';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import BlogList from './pages/BlogList';
+import BlogPost from './pages/BlogPost';
 
 function App() {
   return (
@@ -29,7 +33,12 @@ function App() {
         <Route path="/" element={<MainLayout />}>
           <Route index element={<Dashboard />} />
           <Route path="terms" element={<Terms />} />
-          <Route path="privacy" element={<Privacy />} />
+          <Route path="privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="about" element={<About />} />
+          <Route path="contact" element={<Contact />} />
+          
+          <Route path="blog" element={<BlogList />} />
+          <Route path="blog/:slug" element={<BlogPost />} />
           
           {/* Tool Routes */}
           <Route path="tools/text/diff" element={<TextDiffTool />} />

@@ -1,5 +1,6 @@
 import { useState, useMemo } from 'react';
 import { diffChars, diffWords, diffLines } from 'diff';
+import ToolGuide from '../../components/ToolGuide';
 import { useTranslation } from 'react-i18next';
 
 export default function TextDiffTool() {
@@ -75,6 +76,7 @@ export default function TextDiffTool() {
           {(!oldText && !newText) && <span className="text-gray-400 italic">{t('tools.textDiff.resultHelper')}</span>}
         </div>
       </div>
+      <ToolGuide toolId="textDiff" />
     </div>
   );
 }
